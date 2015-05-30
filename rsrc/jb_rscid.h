@@ -1,0 +1,11 @@
+#define MainForm	1000
+#define MainMenuBar	1001
+#define OptionsMenu	1002
+#define AboutMenuItm	1003
+#define AboutAlert	1004
+#define OldAlert	1006
+#define JavaButton	1007
+#define JavaLabelL1	1008
+#define JavaLabelL2	1010
+#define JavaLabelL3	1011
+#define JavaVoice	1009
