@@ -3,13 +3,17 @@ git:
 
 sudo: required
 
-language: c
+language: python
 
 services: docker
 
 before_install:
   - docker pull jedahan/palmos
 
+install:
+  - pip install python-swiftclient
+
 script:
   - docker run --rm -v"$TRAVIS_BUILD_DIR:/root/code" jedahan/palmos '/root/code/scripts/build.sh'
+  - swift upload travisci javabutton.prc
 
