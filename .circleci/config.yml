@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    shell: /bin/bash -e
     working_directory: ~/code
     docker:
       - image: jedahan/palmos
