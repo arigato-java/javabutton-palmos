@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Set SDK path
-          command: palmos-prep ./palm-os-sdk/sdk-5r3
+          command: palmdev-prep ./palm-os-sdk/sdk-5r3
       - run:
           name: Build Release
           command: make
