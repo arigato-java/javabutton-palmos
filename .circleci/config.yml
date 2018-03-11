@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: jedahan/palmos
+    steps:
+      - checkout
+      - run:
+          name: Set SDK path
+          command: palmos-prep ./palm-os-sdk/sdk-5r3
+      - run:
+          name: Build Release
+          command: make
+      - store_artifacts:
+          path: javabutton.prc
+          destination: release
+
